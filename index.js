@@ -49,3 +49,37 @@ stringLength(longestCityNameInTheWorld)
 // part 1 start
 console.log("Hi From Outside");
 // part 1 end
+// part 5 start
+const paragraph = document.getElementById('paragraph');
+paragraph.innerHTML= '<p id="my_paragraph">Hello World</p>';
+const my_paragraph = document.getElementById('my_paragraph');
+my_paragraph.style.fontSize='30px';
+my_paragraph.style.color='red';
+my_paragraph.innerHTML = 'مرحبا بالعالم';
+// part 5 end
+// part 6 start
+
+
+document.getElementById('body-bg').addEventListener("mouseover",()=>{
+    document.getElementById('body-bg').style.backgroundColor ='blue'
+
+});
+// part 6 end
+// part 7 start
+const myForm = document.getElementById('my_form');
+myForm.addEventListener("submit", function(event){
+
+    if (document.getElementById('age_input').value.length<= 0 || document.getElementById('age_input').value.length<= 0 ) {
+      alert("invalid data !");
+       event.preventDefault()
+       
+    }
+  
+});
+// part 7 end
+// part 8 start
+
+// part 8 end
+// part 9 start
+
+// part 9 end
