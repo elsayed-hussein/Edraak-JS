@@ -69,7 +69,7 @@ document.getElementById('body-bg').addEventListener("mouseover",()=>{
 const myForm = document.getElementById('my_form');
 myForm.addEventListener("submit", function(event){
 
-    if (document.getElementById('age_input').value.length<= 0 || document.getElementById('age_input').value.length<= 0 ) {
+    if (document.getElementById('age_input').value.length<= 0 || document.getElementById('name_input').value.length<= 0 ) {
       alert("invalid data !");
        event.preventDefault()
        
@@ -79,6 +79,25 @@ myForm.addEventListener("submit", function(event){
 // part 7 end
 // part 8 start
 
+let today = new Date();
+let dd = String(today.getDate()).padStart(2, '0');
+let mm = String(today.getMonth() + 1).padStart(2, '0'); 
+let yyyy = today.getFullYear();
+
+today =yyyy + '-' + mm + '-'+ dd;
+// console.log(today);
+
+const myFormTwo = document.getElementById('my_form_two');
+myFormTwo.addEventListener("submit", function(event){
+let day = document.getElementById('today_input').value
+if (day<=today) {
+    event.preventDefault();
+    alert("invalid day !");
+}else{
+
+    alert(`Have good  day \n ${day} \n:)` );
+}
+});
 // part 8 end
 // part 9 start
 
